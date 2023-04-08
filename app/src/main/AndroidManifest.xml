@@ -12,25 +12,33 @@
         android:theme="@style/Theme.EgarAdmin"
         tools:targetApi="31">
         <activity
-            android:name=".ScreensOnboardingActivity"
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".views.ScreensOnboardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ProductActivity"
+            android:name=".views.ProductActivity"
             android:exported="false" />
         <activity
-            android:name=".OrderDetailsActivity"
+            android:name=".views.OrderDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".CommentsActivity"
+            android:name=".views.CommentsActivity"
             android:exported="false" />
         <activity
             android:name=".views.ProductDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".views.AddProductActivity"
-            android:exported="false" />
-        <activity
-            android:name=".views.NextRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".views.RegisterActivity"
@@ -40,16 +48,16 @@
             android:exported="false" />
         <activity
             android:name=".views.SplashActivity"
-            android:exported="false" />
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity
             android:name=".views.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>

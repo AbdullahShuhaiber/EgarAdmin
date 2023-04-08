@@ -7,7 +7,7 @@
     <string name="password">password</string>
     <string name="enter_password">Enter password</string>
     <string name="forgot_your_password">Forgot your password</string>
-    <string name="create_an_account">I dont have an account? Create an account</string>
+    <string name="create_an_account">I dont have an account?</string>
     <string name="store_name">Store name</string>
     <string name="text_create_an_account">Create an account</string>
     <string name="store_owner_name">Store owner name</string>
@@ -22,4 +22,8 @@
     <string name="product_description">Product Description</string>
     <string name="product_image">product image</string>
     <string name="quantity">quantity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

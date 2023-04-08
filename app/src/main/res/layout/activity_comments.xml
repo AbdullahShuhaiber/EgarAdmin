@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bac"
+    android:background="@color/text_app"
     tools:context=".views.CommentsActivity">
 
     <ImageView
@@ -16,8 +16,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/back" />
-
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_170sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcak" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -28,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/shape_bac" />
+        android:background="@drawable/shape_bac" />
 
     <TextView
         android:id="@+id/textView2"
