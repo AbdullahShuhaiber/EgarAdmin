@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(),ScreensOnboardingActivity.class);
+                Intent intent = new Intent(getApplicationContext(),GetStarted.class);
                 startActivity(intent);
             }
         }, 3000);

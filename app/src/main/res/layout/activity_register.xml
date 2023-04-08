@@ -92,7 +92,7 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:text="@string/store_name"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,7 +104,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/store_owner_name"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_Phone" />
 
@@ -132,7 +132,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/commercial_registration_no"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_Password" />
 
@@ -160,7 +160,7 @@
                 android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Commercial_Registration" />
 
@@ -189,14 +189,14 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="Store Domain"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_phone" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_150sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_20sdp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -208,7 +208,10 @@
                     android:id="@+id/checkBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CheckBox"
+                    android:text="equipment"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -216,33 +219,26 @@
                     android:id="@+id/checkBox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CheckBox"
+                    android:text="clothes"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CheckBox"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox"
-                    app:layout_constraintTop_toTopOf="parent" />
+
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CheckBox"
+                    android:text="Places of entertainment"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
-                <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CheckBox"
-                    app:layout_constraintStart_toStartOf="@+id/checkBox3"
-                    app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -254,7 +250,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="Address"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
@@ -281,6 +277,7 @@
                 android:layout_marginStart="@dimen/_19sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="@dimen/_16ssp"
                 android:text="I agree to all terms and conditions"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edit_address" />
@@ -296,6 +293,7 @@
                 android:text="@string/next"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_24ssp"
+                android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

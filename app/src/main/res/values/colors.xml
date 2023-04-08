@@ -9,4 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bac_edit_text">#F3F3F3</color>
     <color name="text_app">#00C569</color>
+
+    //onboarding colors
+    <color name="background">#F0F4F3</color>
+    <color name="buttontext">#50C2C9</color>
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#00C569</color>
 </resources>

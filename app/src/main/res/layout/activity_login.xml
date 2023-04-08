@@ -92,7 +92,7 @@
                 android:layout_marginTop="45dp"
                 android:text="@string/phone"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_16ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -104,7 +104,7 @@
                 android:layout_marginTop="@dimen/_25sdp"
                 android:text="@string/password"
                 android:textColor="@color/text_app"
-                android:textSize="@dimen/_20ssp"
+                android:textSize="@dimen/_16ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/et_Phone" />
 
@@ -144,6 +144,7 @@
                 android:layout_marginTop="@dimen/_30sdp"
                 android:text="@string/login"
                 android:textAllCaps="false"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_24ssp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_20sdp"
