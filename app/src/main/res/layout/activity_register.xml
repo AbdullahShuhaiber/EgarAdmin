@@ -69,7 +69,7 @@
 
 
             <EditText
-                android:id="@+id/et_Phone"
+                android:id="@+id/et_StoreName"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_marginStart="@dimen/_20sdp"
@@ -106,10 +106,10 @@
                 android:textColor="@color/text_app"
                 android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_Phone" />
+                app:layout_constraintTop_toBottomOf="@+id/et_StoreName" />
 
             <EditText
-                android:id="@+id/et_Password"
+                android:id="@+id/et_StoreOwnerName"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_45sdp"
                 android:hint="Enter Store owner name"
@@ -134,10 +134,10 @@
                 android:textColor="@color/text_app"
                 android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_Password" />
+                app:layout_constraintTop_toBottomOf="@+id/et_StoreOwnerName" />
 
             <EditText
-                android:id="@+id/Commercial_Registration"
+                android:id="@+id/etCommercial_Registration"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_45sdp"
                 android:background="@drawable/shape_bac_edit_text"
@@ -162,7 +162,7 @@
                 android:textColor="@color/text_app"
                 android:textSize="@dimen/_18ssp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Commercial_Registration" />
+                app:layout_constraintTop_toBottomOf="@+id/etCommercial_Registration" />
 
 
             <EditText
@@ -196,7 +196,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_100sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginStart="@dimen/_20sdp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -205,10 +205,10 @@
 
 
                 <CheckBox
-                    android:id="@+id/checkBox"
+                    android:id="@+id/checkBox_WeddingClothes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="equipment"
+                    android:text="Wedding clothes"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_4sdp"
                     android:textSize="@dimen/_16ssp"
@@ -216,28 +216,62 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
+                    android:id="@+id/checkBox_equipment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="clothes"
+                    android:text="equipment"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_4sdp"
                     android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox_WeddingClothes"  />
 
                 <CheckBox
-                    android:id="@+id/checkBox4"
+                    android:id="@+id/checkBox_HomesApartments"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Places of entertainment"
+                    android:text="Homes , Apartments
+"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_4sdp"
                     android:textSize="@dimen/_16ssp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox_equipment"  />
+
+                <CheckBox
+                    android:id="@+id/checkBox_Workspaces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Workspaces"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox_WeddingClothes"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <CheckBox
+                    android:id="@+id/checkBox_cars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="cars"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox_equipment"
+                    app:layout_constraintTop_toBottomOf="@id/checkBox_Workspaces" />
+                <CheckBox
+                    android:id="@+id/checkBox_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="Stores"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox_HomesApartments"
+                    app:layout_constraintTop_toBottomOf="@id/checkBox_cars" />
+
+
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -254,6 +288,53 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/password"
+                android:textColor="@color/text_app"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_address" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pass">
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/shape_bac_edit_text"
+                    android:hint="Enter Pass"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    />
+                <EditText
+                    android:id="@+id/et_passC"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bac_edit_text"
+                    android:hint="Enter PassCon"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    />
+            </LinearLayout>
             <EditText
                 android:id="@+id/edit_address"
                 android:layout_width="0dp"
@@ -263,6 +344,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:background="@drawable/shape_bac_edit_text"
                 android:inputType="text"
+                android:hint="address"
                 android:drawableLeft="@drawable/place"
                 android:paddingStart="@dimen/_10sdp"
                 android:paddingEnd="@dimen/_10sdp"
@@ -271,34 +353,36 @@
                 app:layout_constraintTop_toBottomOf="@+id/tv_address" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/checked"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_19sdp"
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_100sdp"
                 android:text="I agree to all terms and conditions"
+                android:textSize="@dimen/_16ssp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edit_address" />
 
+
             <Button
-                android:id="@+id/button"
+                android:id="@+id/bn_register"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:layout_marginBottom="@dimen/_30sdp"
                 android:backgroundTint="@color/text_app"
-                android:text="@string/next"
+                android:text="Register"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_24ssp"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox6"
+                app:layout_constraintTop_toBottomOf="@+id/checked"
                 app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
