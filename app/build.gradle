@@ -48,8 +48,11 @@ dependencies {
     implementation 'com.ernestoyaquello.stepperform:vertical-stepper-form:2.7.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+
+
+
     //Scalable Size Unit (support for different screen sizes)
-    implementation'com.intuit.sdp:sdp-android:1.0.6'
-    implementation'com.intuit.ssp:ssp-android:1.0.6'
+    implementation'com.intuit.sdp:sdp-android:1.1.0'
+    implementation'com.intuit.ssp:ssp-android:1.1.0'
 
 }

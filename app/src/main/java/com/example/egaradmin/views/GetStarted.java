@@ -82,7 +82,8 @@ public class GetStarted extends AppCompatActivity {
         mSLideViewPager.setAdapter(viewPagerAdapter);
 
         setUpindicator(0);
-        mSLideViewPager.addOnPageChangeListener(viewListener);        backbtn = findViewById(R.id.backbtn);
+        mSLideViewPager.addOnPageChangeListener(viewListener);
+        backbtn = findViewById(R.id.backbtn);
         nextbtn = findViewById(R.id.nextbtn);
         skipbtn = findViewById(R.id.skipButton);
 
